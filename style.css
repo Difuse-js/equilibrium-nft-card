@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--very-dark-blue-main);
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--soft-blue);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 2rem;
+  background: var(--very-dark-blue-card);
+  border-radius: 1rem;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 20px rgba(0, 0, 0, 0.2);
+  min-height: 50%;
+}
+
+.card .nft-photo img {
+  width: 30rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.card .main-info p {
+  margin-bottom: 1.5rem;
+  color: var(--soft-blue);
+}
+
+.card .main-info .other-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 1rem;
+}
+
+.time .icon {
+  width: 1.8rem;
+}
+.pfp {
+  width: 2.5rem;
+  border: 0.1rem solid white;
+  border-radius: 5rem;
+}
+hr {
+  margin-bottom: 2rem;
+  opacity: 0.1;
+}
+
+.secondary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main-info .other-info .eth {
+  color: var(--cyan);
+}
+
+.author {
+  color: var(--white);
+}
+
+.eth,
+.time {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .card .nft-photo img {
+    width: 100%;
+  }
+
+  .card {
+    max-width: 80%;
+  }
+}
